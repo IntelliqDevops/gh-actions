@@ -1,0 +1,11 @@
+name: Sample Workeflow
+on: workflow_dispatch
+jobs:
+ my-job:
+   runs-on: ubuntu-latest
+   steps:
+    - name: Print Hello msg
+      run: echo "Hello github"
+    - name: Execute some linux command
+      run: date
+      
